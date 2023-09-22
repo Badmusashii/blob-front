@@ -1,0 +1,6 @@
+<h1>Image display</h1>
+
+<input type="file" (change)="onFileChange($event)" />
+
+<button (click)="getImageFromService()">Recharger la denière image</button>
+<img [src]="imageToShow" alt="Place image title" *ngIf="!isImageLoading" />
